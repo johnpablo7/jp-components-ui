@@ -6,14 +6,16 @@ import { BsFacebook } from "react-icons/bs";
 export const Header = () => {
   return (
     <div className="min-h-[6vh] max-w-container mx-auto flex items-center justify-between">
-      <Image
-        src="/images/logo-jp.svg"
-        alt="logo"
-        width="0"
-        height="0"
-        className="w-14 h-auto"
-        priority
-      />
+      <Link href="/">
+        <Image
+          src="/images/logo-jp.svg"
+          alt="logo"
+          width="0"
+          height="0"
+          className="w-14 h-auto"
+          priority
+        />
+      </Link>
 
       <ul className="flex flex-row gap-5">
         <Link
